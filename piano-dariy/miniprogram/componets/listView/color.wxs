@@ -1,0 +1,9 @@
+var color = {
+    getColor:function(){
+        return "red"
+    }
+}
+
+module.exports = {
+    getColor:color.getColor
+}

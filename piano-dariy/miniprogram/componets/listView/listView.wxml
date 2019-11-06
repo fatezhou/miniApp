@@ -1,5 +1,6 @@
+<wxs module="color" src="color.wxs"></wxs>
 <view>
-  <view class="root-view">
+  <view class="root-view" style="background:{{color.getColor()}}">
     <view class="node-view" wx:for="{{list}}" wx:for-index="i" >
       <view class="node-tiele-view" bindtap="onTapTitle" data-id="{{i}}">
         <text class='node-text {{!item.expand ? "iconfont icon-icon-down":"iconfont icon-icon-up"}}'>{{item.title}}</text>
