@@ -1,0 +1,35 @@
+@import "./../../ali-css/iconfont.wxss";
+
+.root-view{
+    background: grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300rpx;
+    display: flex;
+    flex-direction: column
+}
+
+.node-view{
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.node-tiele-view{
+    margin-top: 10rpx;
+}
+
+.node-text{
+    font-size: 130%;
+    text-align:center
+}
+
+.kid-view{
+    margin:5rpx;
+    border: 1px solid white;
+    background: white;
+    border-radius: 5px;
+}
