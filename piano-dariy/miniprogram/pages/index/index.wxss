@@ -2,7 +2,38 @@
 
 page {
   background: #f6f6f6;
+  height: 100%;
+}
+
+.container{
+  /*background:linear-gradient(180deg, white, lightblue);*/
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  height: 100%;
+}
+
+.titleBar{
+  width: 95%;
+}
+
+.main-content{
+  margin-top: 10rpx;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+
+recordDetail{
+  flex-grow: 1;
+}
+
+.float-button{
+  position:fixed;
+  display:flex;
+  width:50%;
+  left: 60%;
+  bottom:10%;
+  justify-content:center;
 }

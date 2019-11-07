@@ -1,0 +1,5 @@
+<view class="root">
+    <view class="time"></view>
+    <starBar id="star1"></starBar>
+    <starBar id="star2"></starBar>
+</view>

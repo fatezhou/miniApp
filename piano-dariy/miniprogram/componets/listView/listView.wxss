@@ -4,9 +4,10 @@
     background: grey;
     border: 1px solid black;
     border-radius: 5px;
-    width: 300rpx;
+    width: 200rpx;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    height: 100%;
 }
 
 .node-view{
@@ -23,7 +24,7 @@
 }
 
 .node-text{
-    font-size: 130%;
+    font-size: 100%;
     text-align:center
 }
 

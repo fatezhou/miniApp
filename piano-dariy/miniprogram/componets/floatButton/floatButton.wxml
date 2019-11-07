@@ -1,0 +1,3 @@
+<view class="float-root" bindtap="onTap">
+    <text class="float-button iconfont icon-plus"></text>
+</view>

@@ -1,0 +1,78 @@
+@import "./../../ali-css/iconfont.wxss";
+
+.root{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.card{
+    margin-top: 15rpx;
+    /*border: 0px solid black;*/
+    border-radius: 3px;
+    height: 150rpx;
+    margin-left: 30rpx;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+}
+
+.dir{
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.time{
+    border: 0px solid black;
+    border-radius: 3px;
+    margin-right: 70%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    margin-top: 30rpx;
+    font-size: 80%;
+    padding: 10rpx;
+    background: black;
+}
+
+.score{
+    border: 0px solid black;
+    border-radius: 3px;
+    margin-right: 70%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    background: lightslategray;
+    margin-top: 100rpx;
+    font-size: 80%;
+    padding: 10rpx;
+}
+
+.line{
+    border: 0.5px solid snow;
+    height: 0px;
+    margin-right: 20rpx;
+    width: 98%;
+}
+
+.title{
+    padding-top: 10rpx;
+    margin-left: 25%;
+    font-size: 120%;
+}
+
+.content{
+    margin-left: 25%;
+}
+
+.line-layer{
+    display: flex;
+    flex-direction: row;
+}
+
+.expand{
+    margin-left: auto;
+    margin-right: 15rpx;
+    font-size: 120%;
+    margin-top: -20rpx;
+}

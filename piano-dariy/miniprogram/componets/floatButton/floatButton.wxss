@@ -1,0 +1,12 @@
+@import "./../../ali-css/iconfont.wxss";
+
+
+
+.float-root{
+    height: 50rpx;
+    width: 50rpx;
+}
+
+.float-button{
+    font-size: 300%;
+}

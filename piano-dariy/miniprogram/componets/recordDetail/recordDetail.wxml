@@ -1,0 +1,20 @@
+<wxs module="color" src="color.wxs"></wxs>
+<scroll-view scroll-y class="root" style="height:{{height}}px">
+    <view class="dir" wx:for="{{logs}}" bindtap="OnTap" data-id="{{item.id}}">
+        <text class="time">{{item.time}}</text>
+        <view class="card" style="background:{{color.getColor()}}">
+            <text class="title">{{item.title}}</text>
+            <!--view class="line-layer" bindtap="onTapExpand">
+                <view class="line"></view>
+                <text class="expand iconfont icon-icon-down"></text>
+            </view-->
+            <view class="line"></view>
+            <text class="content">{{item.content}}</text>
+        </view>
+        <text class="score">{{item.score}}</text>
+    </view>
+</scroll-view>
+
+
+
+

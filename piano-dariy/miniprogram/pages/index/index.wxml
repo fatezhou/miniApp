@@ -1,4 +1,11 @@
 <!--index.wxml-->
 <view class="container">
-  <listView></listView>
+  <titleBar class="titleBar" id="titleBar"></titleBar>
+  <view class="main-content">
+    <!--listView></listView-->
+    <recordDetail id="recordDetail" bind:OnRecordDetailTap="OnRecordDetailTap"></recordDetail>
+  </view>
+</view>
+<view class="float-button">
+  <floatButton bind:OnFloatButtonTap="OnFloatButtonTap"></floatButton>
 </view>

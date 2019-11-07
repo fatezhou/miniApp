@@ -37,6 +37,31 @@ Page({
     })
   },
 
+  onReady: function(){
+    let query = wx.createSelectorQuery().in(this)
+    var titleBar = query.select("#titleBar")
+    
+    var detail = this.selectComponent('#recordDetail')
+    var windowH = wx.getSystemInfoSync().windowHeight
+
+    titleBar.boundingClientRect(function(res){
+      console.info(windowH - res.height)
+      detail.Init({height:windowH - res.height - 20})
+    }).exec()
+  },
+
+  OnRecordDetailTap:function(e){
+    wx.navigateTo({
+      url:"../detail/detail?id=" + e.detail
+    })
+  },
+
+  OnFloatButtonTap:function(e){
+    console.info("->FloatButtonTap")
+    wx.navigateTo({
+      url:"../detail/detail?new=true" + e.detail
+    })
+  },
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({

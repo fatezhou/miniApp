@@ -1,0 +1,10 @@
+<view class="root">
+    <view style="width:100rpx">
+        <text class="name">{{action}}:</text>
+    </view>
+    <view class="star">
+        <text wx:for="{{stars}}" class='star-text iconfont {{item.star ? "icon-star":"icon-unstar"}}' wx:key="id" data-i="{{item.id}}" bindtap="OnTap"></text>
+    </view>
+</view>
+
+<!--icon-unstar, icon-star-->

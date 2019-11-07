@@ -1,0 +1,8 @@
+<view class="root-view">
+    <text class="time">2019-11-11</text>
+    <view class="line"></view>
+    <view class="person-view">
+        <text class="person-avater iconfont icon-icon-person"></text>
+        <text class="person-name">小明</text>
+    </view>
+</view>

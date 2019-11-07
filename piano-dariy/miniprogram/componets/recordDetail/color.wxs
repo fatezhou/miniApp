@@ -1,0 +1,21 @@
+var color = {
+    getColor:function(){
+        var nPos = Math.floor((Math.random() * 5))
+        var colors = [
+            "#339933",
+            "#FFCC33",
+            "#336699",
+            "#99CC33",
+            "#FF6666"
+        ]
+        return colors[nPos]
+    },
+    getRed:function(){
+        return "#333333"
+    }
+}
+
+module.exports = {
+    getColor:color.getColor,
+    getRed:color.getRed
+}

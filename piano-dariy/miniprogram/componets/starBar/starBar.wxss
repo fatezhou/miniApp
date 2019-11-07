@@ -1,0 +1,12 @@
+@import "./../../ali-css/iconfont.wxss";
+
+.root{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.star-text{
+    margin-left : 30rpx;
+    font-size: 200%;
+}

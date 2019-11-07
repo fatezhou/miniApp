@@ -1,15 +1,14 @@
 <wxs module="color" src="color.wxs"></wxs>
-<view>
-  <view class="root-view" style="background:{{color.getColor()}}">
-    <view class="node-view" wx:for="{{list}}" wx:for-index="i" >
-      <view class="node-tiele-view" bindtap="onTapTitle" data-id="{{i}}">
-        <text class='node-text {{!item.expand ? "iconfont icon-icon-down":"iconfont icon-icon-up"}}'>{{item.title}}</text>
-      </view>
-      <view hidden="{{!item.expand}}" >
-        <view class="kid-view" wx:for="{{item.kids}}">
-          <text class="kid-text">{{item}}</text>
-        </view>
+  <!--style="background:{{color.getColor()}}"-->
+<scroll-view scroll-y="true" class="root-view">
+  <view class="node-view" wx:for="{{list}}" wx:for-index="i" >
+    <view class="node-tiele-view" bindtap="onTapTitle" data-id="{{i}}">
+      <text class='node-text {{!item.expand ? "iconfont icon-icon-down":"iconfont icon-icon-up"}}'>{{item.title}}</text>
+    </view>
+    <view hidden="{{!item.expand}}" >
+      <view class="kid-view" wx:for="{{item.kids}}">
+        <text class="kid-text">{{item}}</text>
       </view>
     </view>
   </view>
-</view>
+</scroll-view>

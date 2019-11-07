@@ -1,0 +1,41 @@
+/* componets/titleBar/titleBar.wxss */
+@import "./../../ali-css/iconfont.wxss";
+.root-view{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.time{
+    font-size: 120%;
+    margin-left: 15rpx;
+}
+
+.line{
+    border: 1px solid black;
+    height: 0px;
+    margin-top: 5rpx;
+    margin-left: 15rpx;
+    margin-right: 15rpx;
+}
+
+.person-view{
+    margin-top: 15rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.person-avater{
+    font-size:200%;
+    margin-left: 30rpx;
+}
+
+.person-name{
+    font-size:130%;
+    margin-left: 20rpx;
+
+}
