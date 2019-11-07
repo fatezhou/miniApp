@@ -1,5 +1,24 @@
 <view class="root">
-    <view class="time"></view>
-    <starBar id="star1"></starBar>
-    <starBar id="star2"></starBar>
+    <view class="header">
+      <text class="avater iconfont icon-icon-pic"></text>
+      <view class="name-time">
+        <text class="name">Chris</text>
+        <view class="time-view">
+          <text class="time-text">2010-10-10</text>
+        </view>
+      </view>
+    </view>
+    <view class="line"></view>
+    <view class="title-view">
+      <text class="title-head iconfont icon-music">  课题</text>
+      <view class="title-text-view">
+        <input type="text" ></input>
+      </view>
+      
+    </view>
+    <starBar id="star-hand"></starBar>
+    <starBar id="star-breath"></starBar>
+    <starBar id="star-note"></starBar>
+    <starBar id="star-rhythm"></starBar>
+    <starBar id="star-sing"></starBar>
 </view>

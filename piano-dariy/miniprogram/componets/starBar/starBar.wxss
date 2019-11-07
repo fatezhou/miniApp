@@ -7,6 +7,6 @@
 }
 
 .star-text{
-    margin-left : 30rpx;
+    margin-left : 15rpx;
     font-size: 200%;
 }

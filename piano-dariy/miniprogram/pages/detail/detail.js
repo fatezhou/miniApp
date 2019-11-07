@@ -19,8 +19,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var star1 = this.selectComponent("#star1")
-    star1.Init({star:3, action:"HEllo"})
+    this.starHand = this.selectComponent("#star-hand")
+    this.starBreath = this.selectComponent("#star-breath")
+    this.starNote = this.selectComponent("#star-note")
+    this.starRhythm = this.selectComponent("#star-rhythm")
+    this.starSing = this.selectComponent("#star-sing")
+    this.starHand.Init({ star: 0, action: "手型" })
+    this.starBreath.Init({ star: 0, action: "呼吸" })
+    this.starNote.Init({ star: 0, action: "音符" })
+    this.starRhythm.Init({ star: 0, action: "节奏" })
+    this.starSing.Init({ star: 0, action: "唱谱" })
   },
 
   /**
