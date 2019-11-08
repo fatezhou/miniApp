@@ -2,9 +2,8 @@
 @import "./../../ali-css/iconfont.wxss";
 
 .root{
-  border: 1px solid black;
-  border-radius: 3px;
-  margin: 10rpx;
+  border-radius: 5px;
+  margin: 30rpx;
   display: flex;
   flex-direction: column;
 }
@@ -15,8 +14,11 @@
 
 .header{
   display: flex;
+  border-radius: 5px;
   flex-direction: row;
   align-items: center;
+  color: white;
+  background:linear-gradient(180deg, #f89a1e, #f17b6e);
 }
 
 .name-time{
@@ -25,17 +27,26 @@
 }
 
 .time-view{
-  border: 1px dotted black;
+  border: 1px solid snow;
+  border-radius: 5px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+}
+
+.name{
+  padding-left: 10rpx;
 }
 
 .line{
-  border: 1px solid black;
+  border: 1px solid rgb(180, 180, 180);
   height: 0px;
   margin-left: 10rpx;
   margin-right: 10rpx;
 }
 
 .title-view{
+  margin-top: 30rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,5 +61,74 @@
 .title-text-view{
   margin-left: 30rpx;
   font-size: 120%;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted rgb(180, 180, 180);
+}
+
+.img-text{
+  border: 1px dotted rgb(180, 180, 180);
+  padding: 5rpx;
+  font-size: 300%
+}
+
+.detail-text{
+  font-size: 110%;
+  height: 150px;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+
+.img-view{
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+  width: auto;
+}
+
+.star-layer{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5rpx;
+  /*background:linear-gradient(180deg, #f89a1e, #f17b6e);*/
+}
+
+starBar{
+  margin-left: 30rpx;
+}
+
+.detail-view{
+  padding: 20rpx;
+  border: 3px solid rgb(38, 168, 255);
+  border-radius: 5px;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm-view{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+}
+
+.ok-button{
+  border-radius: 15rpx;
+  color: white;
+  background: rgb(255, 92, 0);
+  width: 200rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 120%;
+}
+
+.cancel-button{
+  border-radius: 15rpx;
+  color: white;
+  background: rgb(245, 122, 88);
+  width: 200rpx;
+  height: 60rpx;
+  margin-top: 30rpx;
+  font-size: 120%;
+  text-align: center;
 }

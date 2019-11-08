@@ -8,9 +8,9 @@ cloud.init({
 
 // 云函数入口函数
 exports.main = async (event, context) => {
-  const db = cloud.database().collection("piano-record")
-  res = await db.add({hello:1})
-  return {
-    hello:"Hey"
-  }
+  const db = cloud.database()
+  //var res = await db.collection("piano-record").where({}).get()
+  var res = await db.collection("piano-record").add({data:event})
+  console.info(res)
+  return res.data
 }

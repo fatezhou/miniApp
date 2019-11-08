@@ -9,4 +9,5 @@
 .star-text{
     margin-left : 15rpx;
     font-size: 200%;
+    color: #ffd700
 }

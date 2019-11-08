@@ -14,7 +14,8 @@ Component({
     stars:[], //[{i:1, star:true},{i:2, star:true},{i:3, star:true},{i:4, star:false},{i:5, star:false}]
     n:0,
     action:"Action",
-    editable:true
+    editable:false,
+    color:"#f89a1e"
   },
 
   /**

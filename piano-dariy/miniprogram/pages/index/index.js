@@ -3,6 +3,7 @@ const app = getApp()
 
 Page({
   data: {
+    name:"Kid",
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
@@ -59,7 +60,7 @@ Page({
   OnFloatButtonTap:function(e){
     console.info("->FloatButtonTap")
     wx.navigateTo({
-      url:"../detail/detail?new=true" + e.detail
+      url:"../detail/detail?editable=true&name=" + this.data.name
     })
   },
   onGetUserInfo: function(e) {

@@ -3,22 +3,36 @@
       <text class="avater iconfont icon-icon-pic"></text>
       <view class="name-time">
         <text class="name">Chris</text>
-        <view class="time-view">
-          <text class="time-text">2010-10-10</text>
-        </view>
+        <picker mode="date" bindchange="onTimeChanged">
+          <view class="time-view">
+            <text class="time-text">{{date}}</text>
+          </view>
+        </picker>
       </view>
     </view>
-    <view class="line"></view>
+    
     <view class="title-view">
-      <text class="title-head iconfont icon-music">  课题</text>
+      <text class="title-head iconfont icon-music">  课题:</text>
       <view class="title-text-view">
-        <input type="text" ></input>
+        <input type="text" value="{{title}}" disabled="{{!editable}}"></input>
       </view>
-      
     </view>
-    <starBar id="star-hand"></starBar>
-    <starBar id="star-breath"></starBar>
-    <starBar id="star-note"></starBar>
-    <starBar id="star-rhythm"></starBar>
-    <starBar id="star-sing"></starBar>
+    <view class="star-layer">
+      <starBar id="star-hand"></starBar>
+      <starBar id="star-breath"></starBar>
+      <starBar id="star-note"></starBar>
+      <starBar id="star-rhythm"></starBar>
+      <starBar id="star-sing"></starBar>
+    </view>
+    <view class="detail-view">
+      <textarea placeholder="请输入文本" class="detail-text" auto-focus="true" value="{{content}}" disabled="{{!editable}}">
+      </textarea>
+    </view>
+    <view class="img-view">
+      <text class="img-text iconfont icon-icon-pic"></text>
+    </view>
+    <view class="confirm-view" hidden="{{!editable}}">
+      <view class="ok-button" bindtap="onClickOK">确定</view>
+      <view class="cancel-button" bindtap="onClickCancel">取消</view>
+    </view>
 </view>
