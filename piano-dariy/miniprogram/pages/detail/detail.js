@@ -142,7 +142,7 @@ Page({
     console.info("onClickCancel")
     wx.cloud.callFunction({
       name: "query_record",
-      data: {name:"Kid"},
+      data: {query: { name: "Kid" }, orderBy:"time"},
       success: res => {
         console.info(res)
       }
